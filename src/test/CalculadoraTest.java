@@ -14,4 +14,16 @@ public class CalculadoraTest {
         // Assert
         assertEquals(resultadoEsperado, resultadoObtenido);
     }
+
+    @Test
+    void testResta() {
+        // Arrange
+        double a = 3.456;
+        double b = 7.89;
+        double resultadoEsperado = -4.434;
+        // Act
+        double resultadoObtenido = Calculadora.resta(a, b);
+        // Assert
+        assertEquals(resultadoEsperado, resultadoObtenido);
+    }
 }
