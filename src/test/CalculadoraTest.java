@@ -63,4 +63,15 @@ public class CalculadoraTest {
         });
         assertEquals("No se puede dividir por cero", exception.getMessage());
     }
+
+    @Test
+    void testRaizCuadrada() {
+        // Arrange
+        double a = 7d;
+        double resultadoEsperado = 2.645751311064590d;
+        // Act
+        double resultadoObtenido = Calculadora.raizCuadrada(a);
+        // Assert
+        assertEquals(resultadoEsperado, resultadoObtenido, 3);
+    }
 }
