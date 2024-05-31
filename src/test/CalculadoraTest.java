@@ -38,4 +38,16 @@ public class CalculadoraTest {
         // Assert
         assertEquals(resultadoEsperado, resultadoObtenido, 3);
     }
+
+    @Test
+    void testDivision() {
+        // Arrange
+        double a = 3.456d;
+        double b = 7.89d;
+        double resultadoEsperado = 0.436d;
+        // Act
+        double resultadoObtenido = Calculadora.division(a, b);
+        // Assert
+        assertEquals(resultadoEsperado, resultadoObtenido, 3);
+    }
 }
