@@ -13,7 +13,7 @@ public class CalculadoraTest {
         // Act
         double resultadoObtenido = Calculadora.suma(a, b);
         // Assert
-        assertEquals(resultadoEsperado, resultadoObtenido,3);
+        assertEquals(resultadoEsperado, resultadoObtenido,0.001);
     }
 
     @Test
@@ -25,7 +25,7 @@ public class CalculadoraTest {
         // Act
         double resultadoObtenido = Calculadora.resta(a, b);
         // Assert
-        assertEquals(resultadoEsperado, resultadoObtenido, 3);
+        assertEquals(resultadoEsperado, resultadoObtenido, 0.001);
     }
 
     @Test
@@ -33,11 +33,11 @@ public class CalculadoraTest {
         // Arrange
         double a = 3.456d;
         double b = 7.89d;
-        double resultadoEsperado = 27.28784d;
+        double resultadoEsperado = 27.26784d;
         // Act
         double resultadoObtenido = Calculadora.multiplicacion(a, b);
         // Assert
-        assertEquals(resultadoEsperado, resultadoObtenido, 3);
+        assertEquals(resultadoEsperado, resultadoObtenido, 0.001);
     }
 
     @Test
@@ -45,11 +45,11 @@ public class CalculadoraTest {
         // Arrange
         double a = 3.456d;
         double b = 7.89d;
-        double resultadoEsperado = 0.436d;
+        double resultadoEsperado = 0.438022813688d;
         // Act
         double resultadoObtenido = Calculadora.division(a, b);
         // Assert
-        assertEquals(resultadoEsperado, resultadoObtenido, 3);
+        assertEquals(resultadoEsperado, resultadoObtenido, 0.001);
     }
 
     @Test
@@ -67,11 +67,12 @@ public class CalculadoraTest {
     @Test
     void testRaizCuadrada() {
         // Arrange
-        double a = 7d;
-        double resultadoEsperado = 2.645751311064590d;
+        double a = 7.89d;
+        double resultadoEsperado = 2.808914381037627d;
         // Act
         double resultadoObtenido = Calculadora.raizCuadrada(a);
         // Assert
-        assertEquals(resultadoEsperado, resultadoObtenido, 3);
+        assertEquals(resultadoEsperado, resultadoObtenido,0.001);
     }
+
 }
