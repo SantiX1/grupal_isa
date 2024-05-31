@@ -24,6 +24,10 @@ public class Calculadora {
         // copiado de:
         // https://censorcosmico.blogspot.com/2018/07/calculo-raiz-cuadrada-usando-metodo_1.html
 
+        if (a < 0) {
+            throw new IllegalArgumentException("No se puede calcular la raíz cuadrada de un número negativo");
+        }
+
         // Definición variables
         double n = 0, r;
         double min = Double.MAX_VALUE;

@@ -75,4 +75,15 @@ public class CalculadoraTest {
         assertEquals(resultadoEsperado, resultadoObtenido,0.001);
     }
 
+    @Test
+    void testRaizCuadradaNegativa() {
+        // Arrange
+        double a = -7.89d;
+        // Act & Assert
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
+            Calculadora.raizCuadrada(a);
+        });
+        assertEquals("No se puede calcular la raíz cuadrada de un número negativo", exception.getMessage());
+    }
+
 }
